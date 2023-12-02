@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="potfollio.css">
+    <!-- Link for icons -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+    <header class="header">
+        <p class="logo">PORTFOLIO</p>
+        <nav class="navbar">
+            <a href="#home"  >Home</a>
+            <a href="#about">About</a>
+            <a href="#Skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#op">Contact</a>
+        </nav>
+        <div class="navbutton">
+            <label class="switch" id="darkmodeswitch">
+                <input type="checkbox" id="switch">
+                <span class="slider"></span>
+            </label>
+            <div class='bx bx-menu' id="menu_icon"></div>
+        </div>
+    </header>
+    <!-- Home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello,Its's Me</h3>
+            <h1>Nikhil Singh</h1>
+            <h5>And i'm a <span>Full-stack Developer</span></h5>
+            <p>"Hello! I'm a dedicated and experienced full-stack Python developer with a passion for crafting robust and scalable web applications</p>
+            <div class="socials">
+                <a href="https://www.facebook.com/profile.php?id=100014011454295&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+                <a href="https://instagram.com/ig_python_889?igshid=NTc4MTIwNjQ2YQ=="><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/nikhil-singh-a4612b279"><i class='bx bxl-linkedin'></i></a>
+            </div> 
+            <div class="imp_link">
+                <a href="#"  class="btn">Download CVV</a>
+            </div>
+        </div>
+            <div class="home_img">
+                <img src="assets/gallery/IMG_0366.jpg" alt="">
+            </div>
+
+    </section>
+
+    <!-- about section design<<<<<<<<<<< -->
+    <section class="about" id="about">
+        <div class="about_img">
+            <img src="assets/gallery/IMG_20230225_193538_160.jpg" alt="">
+        </div>
+        <div class="about_content">
+            <h2 class="heading">About <span>Me</span></h2>
+                    <h3>Full Stack Developer</h3>
+                    <p>I am a passionate and dedicated full-stack developer with expertise in a wide range of technologies. 
+                        With a strong foundation in HTML, CSS, and JavaScript,
+                        I specialize in building dynamic and responsive web applications
+                     . My skills extend to front-end frameworks like jQuery and Bootstrap,
+                         allowing me to create intuitive and visually appealing user interfaces.</p>
+                         <div class="popup" id="popup-1">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <div class="close_btn" onclick="togglePopup()">&times;</div>
+                                <h2 class="heading_pop">About <span>Me</span></h2>
+                                <p>
+                                    On the back-end, I am proficient in Python and have extensive experience with frameworks like Django,
+                                    which enables me to develop robust and scalable web applications. I have worked with various databases, 
+                                    including MySQL, to efficiently manage and store data for optimal performance.My commitment to staying 
+                                    updated with the latest industry trends and technologies ensures that I can deliver cutting-edge solutions. 
+                                    I am always eager to learn and adapt to new frameworks and languages that enhance my development capabilities.
+                                    In addition to my technical skills, I bring strong problem-solving abilities and attention to detail, which
+                                    enable me to identify and address issues efficiently. I thrive in collaborative environments and enjoy working 
+                                    in teams, leveraging effective communication and teamwork to achieve project goals.With my comprehensive knowledge 
+                                    of HTML, CSS, JavaScript, jQuery, Python, Django, MySQL, Bootstrap, and C++, I am equipped to handle the entire 
+                                    development process, from conceptualization to deployment.I am constantly seeking new challenges and opportunities
+                                    to contribute my skills and expertise. If you are looking for a dedicated and versatile full-stack developer to 
+                                    bring your ideas to life, I would love to connect and discuss potential collaborations.
+                                </p>
+                            </div>
+                         </div>
+                    <button class="btn" onclick="togglePopup()">Read More</button>
+                   
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+    <section class="skills" id="Skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skill-container">
+            <div class="skill-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, a doloribus assumenda reprehenderit itaque placeat excepturi quae dignissimos atque minus alias beatae nobis accusamus? Natus.</p>
+                <a href="http://" class="btn btn-success">Read More</a>
+
+            </div>
+            <div class="skill-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, a doloribus assumenda reprehenderit itaque placeat excepturi quae dignissimos atque minus alias beatae nobis accusamus? Natus.</p>
+                <a href="http://" class="btn">Read More</a>
+
+            </div>
+            <div class="skill-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, a doloribus assumenda reprehenderit itaque placeat excepturi quae dignissimos atque minus alias beatae nobis accusamus? Natus.</p>
+                <a href="http://" class="btn">Read More</a>
+
+            </div>
+        </div>
+        
+    </section>
+    <section class="project" id="projects">
+        <h2 class="heading">Recent <span>Project</span></h2>
+        <div class="porject-container">
+            <div class="project-box">
+                <img src="assets/gallery/portfolio1.jpg" alt="">
+                <div class="project_imfo">
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repudiandae veniam ad eveniet, sapiente voluptatum pariatur debitis officia numquam laudantium.</p>
+                    <a href="http://"class="btn"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="assets/gallery/portfolio2.jpg" alt="">
+                <div class="project_imfo">
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repudiandae veniam ad eveniet, sapiente voluptatum pariatur debitis officia numquam laudantium.</p>
+                    <a href="http://"class="btn"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="assets/gallery/portfolio3.jpg" alt="">
+                <div class="project_imfo">
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repudiandae veniam ad eveniet, sapiente voluptatum pariatur debitis officia numquam laudantium.</p>
+                    <a href="http://" class="btn"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="assets/gallery/portfolio4.jpg" alt="">
+                <div class="project_imfo">
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repudiandae veniam ad eveniet, sapiente voluptatum pariatur debitis officia numquam laudantium.</p>
+                    <a href="http://"class="btn"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="assets/gallery/portfolio5.jpg" alt="">
+                <div class="project_imfo">
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repudiandae veniam ad eveniet, sapiente voluptatum pariatur debitis officia numquam laudantium.</p>
+                    <a href="http://"class="btn"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div> 
+            <div class="project-box">
+                <img src="assets/gallery/portfolio6.jpg" alt="">
+                <div class="project_imfo">
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repudiandae veniam ad eveniet, sapiente voluptatum pariatur debitis officia numquam laudantium.</p>
+                    <a href="http://"class="btn"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact us design -->
+    <section class="contact" id="op">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="">
+            <div class="contact-container">
+                <input type="text" name="" id="" placeholder="Full Name">
+                <input type="email" name="" id="" placeholder="Email">
+            </div>
+            <div class="contact-container">
+                <input type="tel" name="" id="" placeholder="Phone">
+                <input type="tel" name="" id="" placeholder="Email subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Messege"></textarea>
+            <input type="submit" value="Send Messege" class="btn">
+        </form>
+    </section>
+  
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
