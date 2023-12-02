@@ -53,7 +53,7 @@ body
 .header.sticky
 {
     background-color: var(--bg-color);
-    box-shadow: 0 .1rem 1rem var(--shadow-color);
+    box-shadow: 0 .1rem .4rem var(--shadow-color);
 }
 
 .logo
