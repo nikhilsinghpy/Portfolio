@@ -370,6 +370,7 @@ span{
     box-shadow:  0 .1rem .5rem var(--shadow-color);
     text-align: center;
     border-top: .6rem solid var(--main-color);
+    border-bottom: .6rem solid var(--main-color);
 }
 .skill-box i {
     font-size: 7rem;
@@ -378,6 +379,10 @@ span{
 }
 .skill-box h3 {
     font-size: 2.6rem;
+}
+.skill-box h3 span{
+    font-size: 2.6rem;
+    color: var(--main-color);
 }
 .skill-box p {
     font-size: 1.6rem;
