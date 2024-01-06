@@ -10,6 +10,8 @@ header.classList.toggle('sticky',window.scrollY >100)
 
 $('.navbar').removeClass('active');
   $('#menu_icon').removeClass('bx-x');
+  
+  
 }
 
 $(document).ready(function() {

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill {
+  width: 300px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #3498db;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+</style>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Skill Progress Bars</title>
+</head>
+<body>
+
+  <div class="skills-container">
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="progress-bar">
+        <div class="progress-bar-fill" id="html-progress"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="progress-bar">
+        <div class="progress-bar-fill" id="css-progress"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">JavaScript</div>
+      <div class="progress-bar">
+        <div class="progress-bar-fill" id="js-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Set the progress values (out of 100) for each skill
+            const htmlProgress = 80;
+            const cssProgress = 70;
+            const jsProgress = 60;
+
+            // Set the progress bar elements
+            const htmlProgressBar = document.getElementById('html-progress');
+            const cssProgressBar = document.getElementById('css-progress');
+            const jsProgressBar = document.getElementById('js-progress');
+
+            // Set the width of the progress bar fill based on the progress values
+            htmlProgressBar.style.width = `${htmlProgress}%`;
+            cssProgressBar.style.width = `${cssProgress}%`;
+            jsProgressBar.style.width = `${jsProgress}%`;
+            });
+
+    </script>
+</body>
+</html>
